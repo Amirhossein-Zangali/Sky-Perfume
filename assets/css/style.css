@@ -10,7 +10,6 @@ body {
     position: relative;
     background-color: #f1f1f1;
 }
-
 .font {
     font-family: "Playwrite AU QLD", cursive;
 }
@@ -445,6 +444,7 @@ footer h3 {
 
     footer h3 {
         font-size: 38px;
+        margin-bottom: .6rem !important;
     }
 }
 
@@ -633,7 +633,7 @@ footer h3 {
     backdrop-filter: blur(30px);
     box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
     border: 2px solid rgba(255, 255, 255, 0.18);
-    z-index: 10;
+    z-index: 10000;
 }
 
 .info {
@@ -670,12 +670,10 @@ footer h3 {
     color: #fff;
     padding: 100px 80px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
-
-.footer .links a {
-    color: #808080;
+.footer .links a{
+    color: #fff;
     font-size: 10px;
     transition: .5s;
 }
@@ -685,14 +683,14 @@ footer h3 {
     font-size: 15px;
 }
 
+.social li{
+    list-style: none;
+}
+
 .social li a {
     color: #fff;
     font-size: 25px;
     transition: .5s;
-}
-
-.social li a :hover {
-    color: rgb(51, 216, 249, 0.863);
 }
 
 .center {
@@ -731,15 +729,25 @@ footer h3 {
 .button:hover {
     background-color: rgba(8, 176, 210, 0.774) !important;
 }
-.button-header {
-    background-color: rgb(3, 3, 3) !important;
+
+.icon-footer{
     transition-duration: 0.3s;
 }
-.button-header i {
-    color: rgb(3, 3, 3) !important;
-    transition-duration: 0.5s;
+.text-footer{
+    padding-right: 50px !important;
 }
-
-.button-header:hover {
-    background-color: rgb(20, 20, 20) !important;
+.text-footer h3{
+    margin: 0 !important;
+}
+.ins :hover{
+    color: rgb(242, 76, 76);
+}
+.fac :hover{
+    color: rgb(96, 169, 237);
+}
+.git :hover{
+    color: rgb(215, 76, 246);
+}
+.lin :hover{
+    color: rgb(78, 113, 253);
 }
