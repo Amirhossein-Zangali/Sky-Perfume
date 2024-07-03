@@ -641,6 +641,17 @@ footer h3 {
     margin-bottom: 20px;
 }
 
+/* item-cord
+
+.item-cord{
+    box-shadow: none !important;
+}
+item-cord:hover*/
+ /* .item-cord:hover{
+    box-shadow: #000000 !important;
+    box-shadow: inset !important;
+}  */ 
+
 .extra-info {
     filter: opacity(0%);
     border-bottom-left-radius: 18px;
