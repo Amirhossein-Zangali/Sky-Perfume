@@ -9,6 +9,7 @@
 body {
     position: relative;
     background-color: #f1f1f1;
+    overflow-x: hidden;
 }
 .font {
     font-family: "Playwrite AU QLD", cursive;
