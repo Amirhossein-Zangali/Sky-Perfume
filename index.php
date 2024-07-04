@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,10 +31,17 @@
             <a onclick="goToParagraph('paragraph5')" class="nav_a">Sellers</a>
             <a onclick="goToParagraph('paragraph6')" class="nav_a">Follow Us</a>
         </div>
-        <div class="login">
-            <button class="signup">Get Started</button>
-            <button>Login</button>
-        </div>
+
+        <?php if (isset($_SESSION['username'])) : ?>
+            <div class="login">
+                <a class="my-btn text-white" href="log-out.php">Log out</a>
+            </div>
+        <?php else : ?>
+            <div class="login">
+                <a class="my-btn text-white" href="sign-up.php" class="mx-4">Sign Up</a>
+                <a class="my-btn text-white" href="login.php">Login</a>
+            </div>
+        <?php endif;?>
     </nav>
     <!-- end nav -->
 
@@ -121,10 +129,6 @@
                     <div class="info">
                         <div>
                             <h5>CryptoArt</h5>
-                            <div class="btc">
-                                <i class='bx bxl-bitcoin'></i>
-                                <p>0.29 BTC</p>
-                            </div>
                         </div>
                         <p>5 of 33</p>
                     </div>
@@ -138,10 +142,6 @@
                     <div class="info">
                         <div>
                             <h5>Abs-Art</h5>
-                            <div class="btc">
-                                <i class='bx bxl-bitcoin'></i>
-                                <p>0.21 BTC</p>
-                            </div>
                         </div>
                         <p>7 of 12</p>
                     </div>
@@ -155,10 +155,6 @@
                     <div class="info">
                         <div>
                             <h5>TestArt</h5>
-                            <div class="btc">
-                                <i class='bx bxl-bitcoin'></i>
-                                <p>0.21 BTC</p>
-                            </div>
                         </div>
                         <p>9 of 23</p>
                     </div>
@@ -172,10 +168,6 @@
                     <div class="info">
                         <div>
                             <h5>Art-4</h5>
-                            <div class="btc">
-                                <i class='bx bxl-bitcoin'></i>
-                                <p>0.45 BTC</p>
-                            </div>
                         </div>
                         <p>1 of 33</p>
                     </div>
@@ -192,10 +184,6 @@
                         <div class="info">
                             <div>
                                 <h5>CryptoArt</h5>
-                                <div class="btc">
-                                    <i class='bx bxl-bitcoin'></i>
-                                    <p>0.29 BTC</p>
-                                </div>
                             </div>
                             <p>5 of 33</p>
                         </div>
@@ -209,10 +197,6 @@
                         <div class="info">
                             <div>
                                 <h5>Abs-Art</h5>
-                                <div class="btc">
-                                    <i class='bx bxl-bitcoin'></i>
-                                    <p>0.21 BTC</p>
-                                </div>
                             </div>
                             <p>7 of 12</p>
                         </div>
@@ -226,10 +210,6 @@
                         <div class="info">
                             <div>
                                 <h5>TestArt</h5>
-                                <div class="btc">
-                                    <i class='bx bxl-bitcoin'></i>
-                                    <p>0.21 BTC</p>
-                                </div>
                             </div>
                             <p>9 of 23</p>
                         </div>
@@ -243,10 +223,6 @@
                         <div class="info">
                             <div>
                                 <h5>Art-4</h5>
-                                <div class="btc">
-                                    <i class='bx bxl-bitcoin'></i>
-                                    <p>0.45 BTC</p>
-                                </div>
                             </div>
                             <p>1 of 33</p>
                         </div>
@@ -402,7 +378,7 @@
             </ul>
         </div>
         <div class="center">
-            <p>Copyright © 2024 AsmrProg, All Rights Reserved.</p>
+            <p>Copyright © 2024 Sky Perfumes, All Rights Reserved.</p>
         </div>
     </footer>
     <!-- end footer -->

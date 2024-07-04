@@ -38,14 +38,14 @@ a {
 .icon-header i {
     display: inline-block;
     position: absolute;
-    top: -1;
+    top: 10%;
     left: 0;
     margin: 0 6px;
     transition: transform 0.5s ease-in-out;
 }
 
 .icon-header:hover i {
-    transform: translateX(368.5%);
+    transform: translateX(372%);
 }
 
 .text {
@@ -94,23 +94,6 @@ nav .links a:not(:last-child) {
     margin-top: 25px;
 }
 
-nav .login button {
-    padding: 8px 14px;
-    border: none;
-    cursor: pointer;
-    background-color: transparent;
-}
-
-nav .login button.signup {
-    background-color: rgba(51, 216, 249, 0.863);
-    color: #fff;
-    border-radius: 4px;
-    margin-right: 14px;
-}
-
-nav .login button.signup:hover {
-    background-color: rgba(8, 176, 210, 0.774);
-}
 
 header {
     padding: 0 80px;
@@ -572,11 +555,6 @@ footer h3 {
         font-size: 12px;
     }
 
-    nav .login button {
-        font-size: 12px;
-        padding: 6px 10px;
-    }
-
     header .left h1 {
         font-size: 36px;
     }
@@ -724,7 +702,7 @@ item-cord:hover*/
     border: 1px solid rgba(51, 216, 249, 0.863);
     padding: 10px 15px;
     border-radius: 7px;
-    background-color: rgba(104, 219, 242, 0.55);
+    background-color: rgb(104, 219, 242);
     transition-duration: 0.3s;
 }
 
